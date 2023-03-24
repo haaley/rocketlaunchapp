@@ -37,7 +37,7 @@ export default function Home() {
               <div className={styles.grid}>
                 <Card
                   title="Latest launch"
-                  date={nextLaunchData?.date_local}
+                  date={latestLaunchData?.date_local}
                   href="/latest-rocket-launch"
                 />
                 <Card
