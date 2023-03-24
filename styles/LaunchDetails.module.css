@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 16px;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 2px solid white;
+}
+
+.video {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video iframe {
+  left: 0;
+  top: 0;
+  max-height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.header {
+  padding: 20px;
+}
+
+@media screen and (max-width:990px) {
+  .container { flex-wrap: wrap;  }
+  .table { width: 100%;}
+}
